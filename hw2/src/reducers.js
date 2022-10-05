@@ -18,7 +18,7 @@ function postReducer(state, action) {
    + "  " + date.getHours()+":" +date.getMinutes()+":"+date.getSeconds(); 
   
   switch (action.type) {
-    case "CREATE_POST":
+    case "CREATE_TODO":
       const newPost = {
         title: action.title,
         content: action.content,
@@ -30,7 +30,7 @@ function postReducer(state, action) {
 
       };
       return [newPost, ...state];
-    case "CHECK":
+    case "TOGGLE_TODO":
 
       state.map((st,i) => {
         if(action.id === st.id && !action.checked) {
@@ -38,20 +38,25 @@ function postReducer(state, action) {
           state[i].complete = !action.checked;
           state[i].dateCompleted = current_date;
 
-          return state;
-
         }else if ((action.id === st.id && action.checked) ){
          
           state[i].complete = !action.checked;
           state[i].dateCompleted = "";
-
-          return state;
 
           }
           return state;
 
         })
       
+      return state;
+    case "DELETE_TODO":
+      state.map((st,index) => {
+          if(action.id === st.id) {
+
+            return state.splice(index, 1);
+          }
+          return state;
+      })
       return state;
     default:
       return state;

@@ -10,7 +10,7 @@ export default function CreatePost({ user, dispatch }) {
       onSubmit={(e) => {
         e.preventDefault();
         dispatch({
-          type: "CREATE_POST",
+          type: "CREATE_TODO",
           title,
           content,
           author: user,

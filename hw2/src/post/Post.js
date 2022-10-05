@@ -1,5 +1,6 @@
 import React from 'react'; 
 import CheckBox from './CheckBox'
+import DeleteButton from './DeleteButton'
 export default function Post({ title, content, author,dateCreated, complete, dateCompleted,id,dispatch}) {
 
   return (
@@ -20,7 +21,7 @@ export default function Post({ title, content, author,dateCreated, complete, dat
             justifyContent: 'center' ,color: 'rgba(150, 20, 160, 0.7)'}}>
             <strong>Completed: &nbsp;</strong>  <i> {dateCompleted}</i>
       </h8>
-
+      <DeleteButton id={id} dispatch={dispatch} />
     </div>
   );
 }

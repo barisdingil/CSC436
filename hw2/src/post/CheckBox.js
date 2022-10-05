@@ -6,7 +6,7 @@ const [checked, setChecked] = useState(false);
 const handleChange = (event) => { 
     
     setChecked(!checked);
-    dispatch({ type: "CHECK", checked,id});
+    dispatch({ type: "TOGGLE_TODO", checked,id});
   }; 
   
   return (
