@@ -1,0 +1,57 @@
+{
+  "posts": [],
+  "users": [
+    {
+      "email": "bobek@bobek.net",
+      "password": "$2a$10$to8UxM7fRyS5Iy3nRjGN5uG7vZKQLXG2x4ub0oQF9QK3RgZthFdv.",
+      "id": 1
+    },
+    {
+      "email": "as@as.net",
+      "password": "$2a$10$BKURNJyqocBq8hXPeX3tPeWqXp1j1j1XqQqmCR8NF5mh8UhvYtBCi",
+      "id": 2
+    },
+    {
+      "email": "test@test.net",
+      "password": "$2a$10$DmiXpLvHG/Boaa0RkFqY6.rTNBKMF0CTw5Tzw6hicHPva10LxLmzy",
+      "id": 3
+    },
+    {
+      "email": "tt@tt.net",
+      "password": "$2a$10$pXPTD8QnwEVH22dGTYNr7e2svoZmjOANYBwxGCR/vSM/WBjkF/gdK",
+      "id": 4
+    },
+    {
+      "email": "ask@ask.com",
+      "password": "$2a$10$xEjgzc8.cn60GXX6taOf2eBQEUOW/mX2RlDbKi/7wO.VuL8qozgWe",
+      "id": 5
+    },
+    {
+      "email": "new@new.com",
+      "password": "$2a$10$gguytfjfdgfx.ybqgoaYV.l7wVarG.HHr4Iyx7oXfAy3og3uzQnJ2",
+      "id": 6
+    },
+    {
+      "email": "yeni@yeni.com",
+      "password": "$2a$10$cMKqF5B0FUrfmVKTtbUwf.BvWkpZeLwTKsP6OS6OhoAX8vu1VXS0u",
+      "id": 7
+    }
+  ],
+  "themes": [
+    {
+      "id": 1,
+      "primaryColor": "deepskyblue",
+      "secondaryColor": "coral"
+    },
+    {
+      "id": 2,
+      "primaryColor": "red",
+      "secondaryColor": "blue"
+    },
+    {
+      "id": 3,
+      "primaryColor": "green",
+      "secondaryColor": "yellow"
+    }
+  ]
+}
